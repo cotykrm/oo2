@@ -57,4 +57,12 @@ public class Union implements Sustancia{
         return !this.soyMetal();
     }
 
+    /*
+
+    public boolean eliminar(Sustancia otroSustancia){
+        this.sustancias.
+    }
+
+    */
+
 }

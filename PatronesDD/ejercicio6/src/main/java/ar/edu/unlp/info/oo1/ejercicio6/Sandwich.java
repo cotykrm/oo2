@@ -30,6 +30,9 @@ public class Sandwich {
         this.adicional = adicional;
     }
 
+    public double calcularPrecio(){
+        return this.pan + this.aderezo + this.principal + this.adicional;
+    }
     
 
 }
