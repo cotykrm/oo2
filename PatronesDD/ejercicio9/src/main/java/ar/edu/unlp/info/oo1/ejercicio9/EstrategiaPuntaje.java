@@ -10,7 +10,8 @@ public class EstrategiaPuntaje extends EstrategiaSugerencia{
     @Override
     public List<Pelicula> sugerir(Decodificador deco) {
         return deco.getGrilla().stream()
-        .sorted(Comparator.comparingInt(Pelicula::getPuntaje).reversed()
+        .filter(pelicula -> !deco.seReprodujo(pelicula))
+        .sorted(Comparator.comparingDouble(Pelicula::getPuntaje).reversed()
             .thenComparing(Pelicula::getAnioEstreno, Comparator.reverseOrder()))        
         .limit(3)
         .toList();
