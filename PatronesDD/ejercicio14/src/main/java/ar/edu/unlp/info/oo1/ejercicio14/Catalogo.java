@@ -4,18 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Catalogo {
-    private List<Componente> componentes;
+    private static List<Componente> componentes;
 
     public Catalogo(){
         componentes = new ArrayList<>();
     }
 
-    public void addComponente(Componente c){
-        this.componentes.add(c); 
+    public static void setCatalogo(List<Componente> c){
+        componentes = c;
     }
 
-    public Componente getComponente(String description){
-        return this.componentes.stream()
+    public void addComponente(Componente c){
+        componentes.add(c); 
+    }
+
+    public static Componente getComponente(String description){
+        return componentes.stream()
         .filter(comp -> comp.getDescription().equals(description))
         .findFirst()
         .orElse(null);
