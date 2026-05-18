@@ -1,5 +1,7 @@
 package ar.edu.unlp.info.oo1.ejercicio18;
 
-public abstract class Arma {
+public interface Arma {
+
+    public void atacarA(Personaje defensor);
 
 }

@@ -1,5 +1,25 @@
 package ar.edu.unlp.info.oo1.ejercicio18;
 
-public class ArmaduraDeHierro extends Armadura{
+public class ArmaduraDeHierro implements Armadura{
+
+    public void recibirAtaqueDeEspada(Personaje defensor){
+        int vida = defensor.getVida();
+        defensor.setVida(vida - 5);
+
+
+    }
+    public void recibirAtaqueDeArco(Personaje defensor){
+        int vida = defensor.getVida();
+        defensor.setVida(vida - 3);
+
+
+    }
+
+    public void recibirAtaqueDeBaston(Personaje defensor){
+        int vida = defensor.getVida();
+        defensor.setVida(vida - 1);
+
+
+    }
 
 }

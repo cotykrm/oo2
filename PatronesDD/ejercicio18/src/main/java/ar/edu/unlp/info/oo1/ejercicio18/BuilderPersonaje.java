@@ -14,6 +14,14 @@ public abstract class BuilderPersonaje {
         this.personaje = new Personaje();
     }
 
+    public void setNombre(String nombre){
+        this.getPersonaje().setNombre(nombre);
+    }
+
+    public void setVida(){
+        this.getPersonaje().setVida(100);
+    }
+
     public abstract void buildArmadura();
 
     public abstract void buildArma();
