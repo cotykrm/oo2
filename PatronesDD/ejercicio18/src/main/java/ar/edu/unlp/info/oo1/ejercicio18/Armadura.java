@@ -8,4 +8,6 @@ public interface Armadura {
     
     public void recibirAtaqueDeBaston(Personaje defensor);
 
+    public void recibirAtaqueDeMartillo(Personaje defensor);
+
 }

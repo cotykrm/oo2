@@ -5,21 +5,20 @@ public class ArmaduraDeHierro implements Armadura{
     public void recibirAtaqueDeEspada(Personaje defensor){
         int vida = defensor.getVida();
         defensor.setVida(vida - 5);
-
-
     }
     public void recibirAtaqueDeArco(Personaje defensor){
         int vida = defensor.getVida();
         defensor.setVida(vida - 3);
-
-
     }
 
     public void recibirAtaqueDeBaston(Personaje defensor){
         int vida = defensor.getVida();
         defensor.setVida(vida - 1);
+    }
 
-
+    public void recibirAtaqueDeMartillo(Personaje defensor){
+        int vida = defensor.getVida();
+        defensor.setVida(vida - 8);
     }
 
 }
