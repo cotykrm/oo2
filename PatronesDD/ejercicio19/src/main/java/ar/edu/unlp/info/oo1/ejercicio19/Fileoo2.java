@@ -52,6 +52,6 @@ public class Fileoo2 implements Componente{
     
     @Override
     public String prettyPrint(){
-        return this.nombre;
+        return "";
     }
 }
