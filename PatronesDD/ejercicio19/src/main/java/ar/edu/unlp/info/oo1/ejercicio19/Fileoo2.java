@@ -20,25 +20,37 @@ public class Fileoo2 implements Componente{
         this.permisos = permisos;
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
+
+    @Override
     public String getExtension() {
         return extension;
     }
+
+    @Override
     public double getTamanio() {
         return tamanio;
     }
+
+    @Override
     public LocalDate getFechaCreacion() {
         return fechaCreacion;
     }
+
+    @Override
     public LocalDate getFechaModificacion() {
         return fechaModificacion;
     }
+
+    @Override
     public String getPermisos() {
         return permisos;
     }
     
+    @Override
     public String prettyPrint(){
         return this.nombre;
     }
