@@ -1,4 +1,4 @@
-package ar.edu.info.oo2.filtros;
+package ar.edu.unlp.info.oo1.ejercicio22;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.util.Map;
 
 import javax.imageio.ImageIO;
 
-import ar.edu.info.oo2.filtros.imageFilters.*;
+import ar.edu.unlp.info.oo1.ejercicio22.imageFilters.*;
 
 public class PNGFilterLauncher {
   private static Map<String, Filter> filters = new HashMap<String, Filter>();

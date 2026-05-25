@@ -1,4 +1,4 @@
-package ar.edu.info.oo2.filtros.imageFilters;
+package ar.edu.unlp.info.oo1.ejercicio22.imageFilters;
 
 import java.awt.image.BufferedImage;
 
