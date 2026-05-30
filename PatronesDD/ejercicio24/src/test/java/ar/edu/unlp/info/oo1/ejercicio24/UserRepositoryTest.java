@@ -15,10 +15,9 @@ public class UserRepositoryTest {
 		assertEquals("john_doe", user.getUsername());
 		assertEquals("john.doe@example.com", user.getEmail());
 
-		// Incluir estas condiciones en el test final
-		// assertEquals(1, user.getPosts().size());
-		// assertTrue(user.getPosts().stream()
-		//	.anyMatch(post -> post.getText().equals("¡Acabo de publicar mi primer post!")));
+		assertEquals(1, user.getPosts().size());
+		assertTrue(user.getPosts().stream()
+			.anyMatch(post -> post.getText().equals("¡Acabo de publicar mi primer post!")));
 	}
 
 }
